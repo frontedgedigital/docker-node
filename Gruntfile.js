@@ -136,9 +136,9 @@ module.exports = function (grunt) {
 
   grunt.initConfig(config)
 
-  grunt.registerTask('release-pre', 'Creates prerelease tags to trigger release by Docker Hub', releasePre)
-  grunt.registerTask('release-patch', 'Creates patch-level tag & advances minor tag to trigger release by Docker Hub (automatic appropriate advancing of latest tag is a TODO)', releasePatch)
-  grunt.registerTask('release-minor', 'Creates maintenance branch, patch- & minor-level tags, and advances latest tag to trigger release by Docker Hub', releaseMinor)
+  grunt.registerTask('release-pre', 'Creates prerelease tags', releasePre)
+  grunt.registerTask('release-patch', 'Creates patch-level tag & advances minor tag, and, optionally, the latest tag', releasePatch)
+  grunt.registerTask('release-minor', 'Creates maintenance branch, patch- & minor-level tags, and advances latest tag', releaseMinor)
   grunt.registerTask('advanceLatestTagIfNecessary', 'Advances tag "latest" if necessary', function () {
     var done = this.async()
     var scrubTags = function (versionsString) {
