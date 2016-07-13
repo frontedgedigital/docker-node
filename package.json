@@ -1,7 +1,7 @@
 {
   "name": "docker-node",
   "private": true,
-  "version": "0.27.0-pre.1",
+  "version": "1.0.0-pre.0",
   "license": "Apache-2.0",
   "scripts": {
     "pre": "grunt release-pre",
