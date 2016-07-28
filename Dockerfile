@@ -12,7 +12,8 @@ RUN \
     make \
     nodejs-lts \
     python \
-    sudo
+    sudo \
+    sed
 
 RUN adduser -D -u 1000 node
 RUN echo "node ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
