@@ -22,3 +22,4 @@ USER node
 RUN echo 'export PATH="./node_modules/.bin:$PATH"' >> ~/.profile
 
 USER root
+RUN echo 'export PATH="./node_modules/.bin:$PATH"' >> ~/.profile
